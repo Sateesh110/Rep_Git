@@ -61,7 +61,7 @@ git show
 
 # press Q (button) to come out of the show command
 
-
+git bisect (to identify uncommitted changes)
 # git tracking files
 git ls-files
 
