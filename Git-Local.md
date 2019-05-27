@@ -6,6 +6,10 @@ git staging: git add <file name>
 git repository: git commit
 git remote repository:git push origin master
 ```
+## Git Version
+```
+git --version
+``
 ## Initializing Local Repository as git repository
 ```
 Step1: Get to the folder; right click to open git bash
