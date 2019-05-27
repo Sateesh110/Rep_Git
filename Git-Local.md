@@ -1,6 +1,6 @@
 # Git - Local
 
-# Workflow: GIT working >> Git staging >> GIT repository  >> GIT remote repository
+## Workflow: GIT working >> Git staging >> GIT repository  >> GIT remote repository
 ```
 git staging: git add <file name>
 git repository: git commit
@@ -115,3 +115,15 @@ git reset --soft HEAD^
 ```
 git reset --hard HEAD^
 ```
+## Create alias command "hist" to view the history
+```
+git config --global alias.hist "log --oneline --graph --decorate --all"
+For entire git repository: git hist
+For a particular file: git hist --<filename>
+```
+## Rename a file name in git
+Step1: git mv <old example.txt> <new demo.txt>
+Step2: git status
+Step3: ls
+Step4: git commit -m"renamed the example to demo"
+
