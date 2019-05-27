@@ -1,5 +1,11 @@
 # Git - Local
 
+# Workflow: GIT working >> Git staging >> GIT repository  >> GIT remote repository
+```
+git staging: git add <file name>
+git repository: git commit
+git remote repository:git push origin master
+```
 ## Initializing Local Repository as git repository
 ```
 Step1: Get to the folder; right click to open git bash
@@ -62,6 +68,11 @@ git commit -m'Commit changes'
 ## List all files in a branch
 ```
 git ls-tree --name-only -r <branch name>    
+```
+## List all files in git repository
+```
+ls
+ls -al
 ```
 ## Merge Branches
 ```
