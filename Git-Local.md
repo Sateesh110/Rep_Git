@@ -62,6 +62,7 @@ git branch -b <name of new branch>
 ## Create file in the new branch
 ```
 echo "New file in Child2" > [Child2_File.txt]
+or touch <filename>
 git add .
 git commit -m'Commit changes'
 ```
@@ -122,8 +123,18 @@ For entire git repository: git hist
 For a particular file: git hist --<filename>
 ```
 ## Rename a file name in git
+```
 Step1: git mv <old example.txt> <new demo.txt>
 Step2: git status
 Step3: ls
 Step4: git commit -m"renamed the example to demo"
+```
+## Delete a file in git
+```
+Step1: git rm <file name>
+Step2: git status
+Step3: ls
+Step4: git commit -m" deleted the file name"
+```
+
 
