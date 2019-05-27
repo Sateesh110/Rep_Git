@@ -21,7 +21,7 @@ git status
 ```
 git commit -m"commit changes"
 ```
-## Log
+## show all commits in the current branch’s history
 ```
 git log
 ```
