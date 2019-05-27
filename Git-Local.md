@@ -67,7 +67,9 @@ git branch -b <name of new branch>
 ```
 echo 'New file in Child2' > <Child2_File.txt>
 or touch <filename>
+       
 git add .
+
 git commit -m'Commit changes'
 ```
 ## List all files in a branch
@@ -102,6 +104,7 @@ git fetch origin
 Cloning is the process of pulling down a copy of a repository stored on a server
 
 Step1 :Go to the parent folder of where you want to repository's folder to be in.
+
 Step2 : git clone [url to repository's git file] <name of folder / repository you want>
 ```
 ## View unstagged changes
@@ -123,7 +126,9 @@ git reset --hard HEAD^
 ## Create alias command "hist" to view the history
 ```
 git config --global alias.hist 'log --oneline --graph --decorate --all'
+       
 For entire git repository: git hist
+
 For a particular file: git hist --<filename>
 ```
 ## Rename a file name in git
