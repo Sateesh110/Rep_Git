@@ -25,6 +25,14 @@ git status
 ```
 git commit -m"commit changes"
 ```
+## Show Changes From A Particular Commit
+```
+git show --pretty="format:" <commitID>
+```
+## Revert a commit with a new commit 
+```
+git revert <commitID>
+```
 ## show all commits in the current branch’s history
 ```
 git log
@@ -63,10 +71,15 @@ Step1: Switch to the branch you want to pull changes into: 
 Step2: Pull changes from another branch into your branch: 
        git merge <Source Branch Name>
 ```
-## Pull changes form remote repository
+## Pull a branch from remote repository
 ```
+git pull origin <branch name>
 git pull origin master
-or git pull
+```
+## Pull all branches from remote repository
+```
+git pull
+git fetch origin
 ```
 ## Clone remote repository to local
 ```
@@ -75,10 +88,19 @@ Cloning is the process of pulling down a copy of a repository stored on a server
 Step1 :Go to the parent folder of where you want to repository's folder to be in.
 Step2 : git clone [url to repository's git file] [name of folder / repository you want]
 ```
-## Clone remote repository to local
+## View unstagged changes
 ```
-Cloning is the process of pulling down a copy of a repository stored on a server:
-
-Step1 :Go to the parent folder of where you want to repository's folder to be in.
-Step2 : git clone [url to repository's git file] [name of folder / repository you want]
+git diff
+```
+## Unstage a file
+```
+git reset <file name>
+```
+## Undo Last Commit, Move Commits Changes To Staging
+```
+git reset --soft HEAD^
+```
+## Undo Last Commit, Remove All Changes In Your Working Directory
+```
+git reset --hard HEAD^
 ```
