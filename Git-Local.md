@@ -13,6 +13,10 @@ git add <filename>
 ```
 git add .
 ```
+## Add/track one specific folder 
+```
+git add chapter2/
+```
 ## Status
 ```
 git status
@@ -47,6 +51,10 @@ echo "New file in Child2" > [Child2_File.txt]
 git add .
 git commit -m'Commit changes'
 ```
+## List all files in a branch
+```
+git ls-tree --name-only -r <branch name>    
+```
 ## Merge Branches
 ```
 Step1: Switch to the branch you want to pull changes into: 
@@ -59,4 +67,18 @@ Step2: Pull changes from another branch into your branch: 
 ```
 git pull origin master
 or git pull
+```
+## Clone remote repository to local
+```
+Cloning is the process of pulling down a copy of a repository stored on a server:
+
+Step1 :Go to the parent folder of where you want to repository's folder to be in.
+Step2 : git clone [url to repository's git file] [name of folder / repository you want]
+```
+## Clone remote repository to local
+```
+Cloning is the process of pulling down a copy of a repository stored on a server:
+
+Step1 :Go to the parent folder of where you want to repository's folder to be in.
+Step2 : git clone [url to repository's git file] [name of folder / repository you want]
 ```
