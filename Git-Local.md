@@ -25,7 +25,7 @@ git add .
 ```
 ## Add/track one specific folder 
 ```
-git add chapter2/
+git add <chapter2>/
 ```
 ## Status
 ```
@@ -65,12 +65,9 @@ git branch -b <name of new branch>
 ```
 ## Create file in the new branch
 ```
-echo 'New file in Child2' > <Child2_File.txt>
-       
-or touch <filename>
-       
+echo 'New file in Child2' > <Child2_File.txt>       
+or touch <filename>       
 git add .
-
 git commit -m'Commit changes'
 ```
 ## List all files in a branch
@@ -104,8 +101,7 @@ git fetch origin
 ```
 Cloning is the process of pulling down a copy of a repository stored on a server
 
-Step1 :Go to the parent folder of where you want to repository's folder to be in
-
+Step1 : Go to the parent folder of where you want to repository's folder to be in
 Step2 : git clone [url to repository's git file] <name of folder / repository you want>
 ```
 ## View unstagged changes
@@ -134,19 +130,14 @@ For a particular file: git hist --<filename>
 ```
 Step1: git mv <old example.txt> <new demo.txt>       
 Step2: git status
-
 Step3: ls
-
 Step4: git commit -m"renamed the example to demo"
 ```
 ## Delete a file in git
 ```
-Step1: git rm <file name>
-       
+Step1: git rm <file name>      
 Step2: git status
-
 Step3: ls
-
 Step4: git commit -m" deleted the file name"
 ```
 
