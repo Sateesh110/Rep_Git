@@ -13,6 +13,7 @@ git --version
 ## Initializing Local Repository as git repository
 ```
 Step1: Get to the folder; right click to open git bash
+
 Step2: git init
 ```
 ## Add a file
@@ -66,6 +67,7 @@ git branch -b <name of new branch>
 ## Create file in the new branch
 ```
 echo 'New file in Child2' > <Child2_File.txt>
+       
 or touch <filename>
        
 git add .
@@ -103,7 +105,7 @@ git fetch origin
 ```
 Cloning is the process of pulling down a copy of a repository stored on a server
 
-Step1 :Go to the parent folder of where you want to repository's folder to be in.
+Step1 :Go to the parent folder of where you want to repository's folder to be in
 
 Step2 : git clone [url to repository's git file] <name of folder / repository you want>
 ```
@@ -134,15 +136,21 @@ For a particular file: git hist --<filename>
 ## Rename a file name in git
 ```
 Step1: git mv <old example.txt> <new demo.txt>
+       
 Step2: git status
+
 Step3: ls
+
 Step4: git commit -m"renamed the example to demo"
 ```
 ## Delete a file in git
 ```
 Step1: git rm <file name>
+       
 Step2: git status
+
 Step3: ls
+
 Step4: git commit -m" deleted the file name"
 ```
 
