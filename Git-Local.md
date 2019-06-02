@@ -140,5 +140,13 @@ Step2: git status
 Step3: ls
 Step4: git commit -m" deleted the file name"
 ```
-
+## Configure Name & Email
+```
+git config --global user.name "Your Name"
+git config --global user.email "yourEmail@mail.com"
+```
+## Reset the changes (removed file from staging area)
+```
+git reset <filename.extension>
+```
 
